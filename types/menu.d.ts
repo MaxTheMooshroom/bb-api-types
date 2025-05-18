@@ -34,7 +34,7 @@ declare class Menu extends Deletable {
 	constructor(
 		id: string,
 		template: MenuItem[] | ((context?: any) => MenuItem[]),
-		options?: MenuOptions
+		options?: MenuOptions,
 	)
 	constructor(template: MenuItem[] | ((context?: any) => MenuItem[]), options?: MenuOptions)
 

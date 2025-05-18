@@ -389,7 +389,7 @@ declare global {
 			pixel_y: number,
 			pixel_color: RGBAColor,
 			local_opacity: number,
-			PaintContext: PaintContext
+			PaintContext: PaintContext,
 		): RGBAColor
 		/**
 		 * Function that runs when a new brush stroke starts. Return false to cancel the brush stroke
@@ -519,7 +519,7 @@ declare global {
 			id: string,
 			options: WidgetOptions & {
 				text: string
-			}
+			},
 		)
 		set(text: any): this
 		update(): this

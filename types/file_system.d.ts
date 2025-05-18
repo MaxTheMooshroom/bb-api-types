@@ -36,7 +36,7 @@ declare namespace Blockbench {
 	export function read(
 		files: string[],
 		options?: ReadOptions,
-		callback?: (files: FileResult[]) => void
+		callback?: (files: FileResult[]) => void,
 	): void
 	/**
 	 * Reads the content from the specified files. Desktop app only.
@@ -44,7 +44,7 @@ declare namespace Blockbench {
 	export function readFile(
 		files: string[],
 		options?: ReadOptions,
-		callback?: (files: FileResult[]) => void
+		callback?: (files: FileResult[]) => void,
 	): void
 
 	type WriteType = 'buffer' | 'text' | 'zip' | 'image'
@@ -59,7 +59,7 @@ declare namespace Blockbench {
 	export function writeFile(
 		file_path: string,
 		options: WriteOptions,
-		callback?: (file_path: string) => void
+		callback?: (file_path: string) => void,
 	): void
 
 	interface PickDirOptions {
@@ -153,7 +153,7 @@ declare namespace Blockbench {
 	export function addDragHandler(
 		id: string,
 		options: DragHandlerOptions,
-		callback?: () => void
+		callback?: () => void,
 	): Deletable
 	export function removeDragHandler(id: string): void
 }

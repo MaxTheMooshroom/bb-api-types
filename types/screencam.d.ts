@@ -47,7 +47,7 @@ declare namespace Screencam {
 	function screenshotPreview(
 		preview: Preview,
 		options: ScreenshotOptions,
-		cb: ScreenshotReturn
+		cb: ScreenshotReturn,
 	): void
 
 	function fullScreen(options: ScreenshotOptions, cb: ScreenshotReturn): void

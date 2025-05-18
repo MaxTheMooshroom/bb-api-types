@@ -251,7 +251,7 @@ interface NodePreviewControllerOptions {
 declare class NodePreviewController {
 	constructor(
 		type: typeof OutlinerElement | typeof OutlinerNode,
-		options: NodePreviewControllerOptions
+		options: NodePreviewControllerOptions,
 	)
 	type: typeof OutlinerNode
 	events: {

@@ -15,7 +15,7 @@ declare namespace Painter {
 	function edit(
 		texture: Texture,
 		callback: (canvas: HTMLCanvasElement) => void,
-		options: TextureEditOptions
+		options: TextureEditOptions,
 	): void
 	function setAlphaMatrix(texture: Texture, x: number, y: number, val: number): void
 	function getAlphaMatrix(texture: Texture, x: number, y: number): number
@@ -25,7 +25,7 @@ declare namespace Painter {
 		base: RGBAColor,
 		added: RGBAColor,
 		opacity: number,
-		blend_mode: string
+		blend_mode: string,
 	): RGBAColor
 	function getMirrorElement(element: OutlinerElement, symmetry_axes: number[]): void
 	function updateNslideValues(): void
@@ -37,7 +37,7 @@ declare namespace Painter {
 		y: number,
 		w: number,
 		h: number,
-		cb: () => void
+		cb: () => void,
 	): void
 	function getPixelColor(ctx: CanvasRenderingContext2D, x: number, y: number): void
 	function modifyCanvasSection(
@@ -46,7 +46,7 @@ declare namespace Painter {
 		y: number,
 		w: number,
 		h: number,
-		cb: () => void
+		cb: () => void,
 	): void
 	function editCircle(
 		ctx: CanvasRenderingContext2D,
@@ -54,7 +54,7 @@ declare namespace Painter {
 		y: number,
 		r: number,
 		softness: number,
-		editPx: (RGBAColor: any, opacity: number, px: number, py: number) => RGBAColor
+		editPx: (RGBAColor: any, opacity: number, px: number, py: number) => RGBAColor,
 	): void
 	function editSquare(
 		ctx: CanvasRenderingContext2D,
@@ -62,7 +62,7 @@ declare namespace Painter {
 		y: number,
 		r: number,
 		softness: number,
-		editPx: (RGBAColor: any, opacity: number, px: number, py: number) => RGBAColor
+		editPx: (RGBAColor: any, opacity: number, px: number, py: number) => RGBAColor,
 	): void
 	function openBrushOptions(): void
 	function loadBrushPreset(preset: any): void

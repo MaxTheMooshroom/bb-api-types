@@ -20,7 +20,7 @@ interface CubeSizeLimiter {
 	 */
 	test: (
 		cube: Cube,
-		values?: { from: ArrayVector3; to: ArrayVector3; inflate: number }
+		values?: { from: ArrayVector3; to: ArrayVector3; inflate: number },
 	) => boolean
 	/**
 	 * Move the cube back into the restructions
@@ -33,7 +33,7 @@ interface CubeSizeLimiter {
 		cube: Cube,
 		values?: { from: ArrayVector3; to: ArrayVector3; inflate: number },
 		axis?: number,
-		direction?: boolean | null
+		direction?: boolean | null,
 	) => void
 	/**
 	 * Set to true to tell Blockbench to check and adjust the cube limit after rotating a cube

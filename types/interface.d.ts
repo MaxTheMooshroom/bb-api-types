@@ -25,7 +25,7 @@ declare namespace Interface {
 	function createElement(
 		type: keyof HTMLElementTagNameMap,
 		attributes?: {},
-		content?: string | HTMLElement | HTMLElement[]
+		content?: string | HTMLElement | HTMLElement[],
 	): HTMLElement
 
 	const data: {
@@ -85,7 +85,7 @@ declare namespace Interface {
 					default?: T[keyof T]
 					options: T
 					onChange?(value: T[keyof T]): void
-				}
+				},
 			)
 			set(value: T[keyof T]): void
 		}

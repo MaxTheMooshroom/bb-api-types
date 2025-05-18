@@ -45,7 +45,7 @@ declare class MeshFace extends Face {
 	getOccupationMatrix(
 		texture_space?: boolean,
 		start_offset?: ArrayVector2,
-		matrix?: OccupationMatrix
+		matrix?: OccupationMatrix,
 	): OccupationMatrix
 	/**
 	 * Get the keys of this face and all faces that are connected with it on the UV map
@@ -71,7 +71,7 @@ declare class MeshFace extends Face {
 	 * Get the adjacent face in the specified side
 	 */
 	getAdjacentFace(
-		side_index: number
+		side_index: number,
 	): { face: MeshFace; key: string; edge: MeshEdge; index: number } | null
 	/**
 	 * Returns the face key
@@ -155,7 +155,7 @@ declare class Mesh extends OutlinerElement {
 		axis: number,
 		negative: boolean,
 		allow_negative: boolean,
-		bidirectional?: boolean
+		bidirectional?: boolean,
 	): void
 	applyTexture(texture: Texture, faces?: true | undefined | string[]): void
 

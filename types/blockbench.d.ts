@@ -243,14 +243,14 @@ declare namespace Blockbench {
 		callback?: (
 			button: number | string,
 			checkbox_results: { [key: string]: boolean } | undefined,
-			event: Event
-		) => void
+			event: Event,
+		) => void,
 	): void
 
 	export function textPrompt(
 		title: string,
 		value: string,
-		callback: (value: string) => void
+		callback: (value: string) => void,
 	): void
 	/**
 	 * todo
@@ -296,7 +296,7 @@ declare namespace Blockbench {
 	 */
 	export function addListener<E extends string>(
 		event_names: E,
-		callback: (data: any) => void
+		callback: (data: any) => void,
 	): void
 	/**
 	 * Adds a listener to a Blockbench event.
@@ -316,7 +316,7 @@ declare namespace Blockbench {
 	 */
 	export function removeListener<E extends string>(
 		event_names: E,
-		callback: (data: any) => void
+		callback: (data: any) => void,
 	): void
 
 	/**
@@ -325,7 +325,7 @@ declare namespace Blockbench {
 	export function read(
 		files: string[],
 		options?: ReadOptions,
-		callback?: (files: FileResult[]) => void
+		callback?: (files: FileResult[]) => void,
 	): void
 	/**
 	 * Reads the content from the specified files. Desktop app only.
@@ -333,7 +333,7 @@ declare namespace Blockbench {
 	export function readFile(
 		files: string[],
 		options?: ReadOptions,
-		callback?: (files: FileResult[]) => void
+		callback?: (files: FileResult[]) => void,
 	): void
 
 	/**
@@ -342,7 +342,7 @@ declare namespace Blockbench {
 	export function writeFile(
 		file_path: string,
 		options: WriteOptions,
-		callback?: (file_path: string) => void
+		callback?: (file_path: string) => void,
 	): void
 
 	/**
@@ -366,7 +366,7 @@ declare namespace Blockbench {
 	export function findFileFromContent(
 		base_directories: string[],
 		options: FindFileFromContentOptions,
-		check_file: CheckFileCallback
+		check_file: CheckFileCallback,
 	): false | any
 
 	/**
@@ -375,7 +375,7 @@ declare namespace Blockbench {
 	export function addDragHandler(
 		id: string,
 		options: DragHandlerOptions,
-		callback?: () => void
+		callback?: () => void,
 	): Deletable
 
 	export function removeDragHandler(id: string): void
@@ -511,8 +511,8 @@ declare const NativeGlobals: {
 	Animation: {
 		new (
 			effect?: AnimationEffect | null | undefined,
-			timeline?: AnimationTimeline | null | undefined
-		): Animation
-		prototype: Animation
+			timeline?: AnimationTimeline | null | undefined,
+		): Animation;
+		prototype: Animation;
 	}
 }

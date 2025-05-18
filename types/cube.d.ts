@@ -98,7 +98,7 @@ declare class Cube extends OutlinerElement {
 		axis: number,
 		negative: boolean,
 		allow_negative?: boolean,
-		bidirectional?: boolean
+		bidirectional?: boolean,
 	): void
 
 	static all: Cube[]

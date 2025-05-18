@@ -289,7 +289,7 @@ declare global {
 		 */
 		edit(
 			callback?: (instance: HTMLCanvasElement | any) => void | HTMLCanvasElement,
-			options?: TextureEditOptions
+			options?: TextureEditOptions,
 		): void
 		menu: Menu
 		/**

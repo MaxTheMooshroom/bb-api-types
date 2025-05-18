@@ -58,7 +58,7 @@ declare function addEventListeners(
 	element: HTMLElement,
 	events: string,
 	func: (event: Event) => void,
-	option?: any
+	option?: any,
 ): void
 
 declare function compareVersions(string1: any, string2: any): boolean
@@ -77,7 +77,7 @@ declare function getRectangle(
 	a: any,
 	b: any,
 	c: any,
-	d: any
+	d: any,
 ): {
 	ax: any
 	ay: any
@@ -106,7 +106,7 @@ declare function intToRGBA(int: any): {
 }
 declare function getAverageRGB(
 	imgEl: any,
-	blockSize: any
+	blockSize: any,
 ): {
 	r: number
 	g: number
@@ -177,26 +177,26 @@ declare namespace Merge {
 		target: object,
 		source: object,
 		key: string | number,
-		validate?: (value: string) => boolean
+		validate?: (value: string) => boolean,
 	): void
 	function molang(target: object, source: object, key: string | number): void
 	function boolean(
 		target: object,
 		source: object,
 		key: string | number,
-		validate?: (value: boolean) => boolean
+		validate?: (value: boolean) => boolean,
 	): void
 	function arrayVector(
 		target: object,
 		source: object,
 		key: string | number,
-		validate?: (value: number[]) => boolean
+		validate?: (value: number[]) => boolean,
 	): void
 	function arrayVector2(
 		target: object,
 		source: object,
 		key: string | number,
-		validate?: (value: ArrayVector2) => boolean
+		validate?: (value: ArrayVector2) => boolean,
 	): void
 }
 

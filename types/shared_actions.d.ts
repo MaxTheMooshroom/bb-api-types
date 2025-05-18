@@ -59,7 +59,7 @@ declare namespace SharedActions {
 		subject: string,
 		event?: Event,
 		context?: any,
-		force?: boolean
+		force?: boolean,
 	): boolean
 	/**
 	 * Check if there is an active and available handler in the current situation for a shared action
@@ -75,7 +75,7 @@ declare namespace SharedActions {
 	function find(
 		action_id: SharedActionID,
 		event?: Event,
-		context?: any
+		context?: any,
 	): SharedActionHandler | null
 }
 

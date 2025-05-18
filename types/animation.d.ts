@@ -152,7 +152,7 @@ declare namespace Animator {
 	function autocompleteMolang(
 		text: string,
 		position: number,
-		type: string
+		type: string,
 	): MolangAutoCompletionItem[]
 }
 

@@ -62,12 +62,12 @@ declare class _Keyframe {
 		after: _Keyframe,
 		after_plus: _Keyframe,
 		axis: axisLetter,
-		alpha: number
+		alpha: number,
 	): number
 	getArray(data_point?: number): (number | string)[]
 	getFixed(
 		data_point?: number,
-		get_quaternion?: boolean
+		get_quaternion?: boolean,
 	): THREE.Vector3 | THREE.Euler | THREE.Quaternion
 	getTimecodeString(): string
 	compileBedrockKeyframe(): any

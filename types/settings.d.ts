@@ -84,7 +84,7 @@ declare namespace Settings {
 		options?: Partial<{
 			search: string
 			tab: 'setting' | 'keybindings' | 'layout_settings' | 'credits'
-		}>
+		}>,
 	): void
 	/**
 	 * Save all settings to the local storage
