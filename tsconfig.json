@@ -1,16 +1,17 @@
 {
-	"include": ["./types/**/*"],
-	"compilerOptions": {
-		"target": "ES2022",
-		"module": "commonjs",
-		"lib": ["dom", "ES2022"],
-		"sourceMap": true,
-		"rootDir": ".",
-		"strict": true,
-		"noImplicitAny": true,
-		"esModuleInterop": true,
-		"allowUmdGlobalAccess": true,
-		"skipLibCheck": true
-	},
-	"exclude": ["./node_modules/**/*"]
+  "include": ["./types/**/*"],
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["dom", "ES2022"],
+    "sourceMap": true,
+    "rootDir": ".",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": true,
+    "skipLibCheck": false,
+    "declaration": true
+  },
+  "exclude": ["./node_modules/**/*"]
 }
